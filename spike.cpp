@@ -293,7 +293,7 @@ int main(void) {
 	for (int i = 0; i <= image.width; ++i) {
 		for (int j = 0; j <= image.height; ++j) {
 			image.setPixelData(i, j, colorR, mask.getPixelData(i, j, colorR) + image.getPixelData(i, j, colorR));
-			image.setPixelData(i, j, colorG, mask.getPixelData(i, j, colorG) + image.getPixelData(i, j, colorB));
+			image.setPixelData(i, j, colorG, mask.getPixelData(i, j, colorG) + image.getPixelData(i, j, colorG));
 			image.setPixelData(i, j, colorB, mask.getPixelData(i, j, colorB) + image.getPixelData(i, j, colorB));
 		}
 	}
